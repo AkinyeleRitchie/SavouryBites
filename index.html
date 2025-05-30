@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites | Modern Dining Experience</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation with Dropdown -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Savory Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Starters</a></li>
+                            <li><a class="dropdown-item" href="#">Main Courses</a></li>
+                            <li><a class="dropdown-item" href="#">Desserts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Chef's Specials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#reservationModal">
+                            Reserve a Table
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="foodSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#foodSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#foodSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#foodSlider" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="Delicious Food">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Gourmet Dining Experience</h5>
+                    <p>Discover our chef's special creations made with the finest ingredients.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" class="d-block w-100" alt="Healthy Food">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Healthy & Fresh</h5>
+                    <p>Our dishes are prepared daily with organic, locally-sourced ingredients.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1581&q=80" class="d-block w-100" alt="Dessert">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Decadent Desserts</h5>
+                    <p>Indulge in our signature sweet creations that will delight your senses.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#foodSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#foodSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- About Section with Accordion -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">About Savory Bites</h2>
+            <div class="accordion" id="aboutAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Our Story
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body">
+                            <p>Founded in 2010, Savory Bites began as a small family-owned bistro with a passion for creating memorable dining experiences. Today, we've grown into a renowned restaurant while maintaining our commitment to quality and hospitality.</p>
+                            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Restaurant Interior" class="img-fluid rounded mt-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Our Chef
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body">
+                            <p>Chef Michael Rodriguez, with over 20 years of culinary experience and training in Michelin-starred restaurants across Europe, brings his innovative techniques and passion for flavor to every dish at Savory Bites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Our Ingredients
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                        <div class="accordion-body">
+                            <p>We source our ingredients from local farmers and trusted suppliers who share our commitment to sustainable and ethical practices. Our menu changes seasonally to showcase the freshest produce available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Tabs Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Menu</h2>
+            
+            <ul class="nav nav-tabs justify-content-center mb-4" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="starters-tab" data-bs-toggle="tab" data-bs-target="#starters" type="button">Starters</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mains-tab" data-bs-toggle="tab" data-bs-target="#mains" type="button">Main Courses</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="desserts-tab" data-bs-toggle="tab" data-bs-target="#desserts" type="button">Desserts</button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="menuTabsContent">
+                <div class="tab-pane fade show active" id="starters" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Bruschetta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tomato Bruschetta</h5>
+                                    <p class="card-text">Toasted bread topped with tomatoes, garlic, and fresh basil.</p>
+                                    <span class="badge bg-primary">$8.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1603105037880-880cd4edfb0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" class="card-img-top" alt="Soup">
+                                <div class="card-body">
+                                    <h5 class="card-title">Creamy Mushroom Soup</h5>
+                                    <p class="card-text">Wild mushroom soup with truffle oil and herb croutons.</p>
+                                    <span class="badge bg-primary">$9.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Salad">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caprese Salad</h5>
+                                    <p class="card-text">Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.</p>
+                                    <span class="badge bg-primary">$10.50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="mains" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" class="card-img-top" alt="Steak">
+                                <div class="card-body">
+                                    <h5 class="card-title">Filet Mignon</h5>
+                                    <p class="card-text">8oz grass-fed beef filet with roasted potatoes and seasonal vegetables.</p>
+                                    <span class="badge bg-primary">$32.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1371&q=80" class="card-img-top" alt="Pasta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Truffle Pasta</h5>
+                                    <p class="card-text">Homemade fettuccine with wild mushrooms and black truffle cream sauce.</p>
+                                    <span class="badge bg-primary">$24.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Salmon">
+                                <div class="card-body">
+                                    <h5 class="card-title">Herb-Crusted Salmon</h5>
+                                    <p class="card-text">Atlantic salmon with lemon butter sauce and asparagus.</p>
+                                    <span class="badge bg-primary">$26.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="desserts" role="tabpanel">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" class="card-img-top" alt="Chocolate Cake">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chocolate Lava Cake</h5>
+                                    <p class="card-text">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                                    <span class="badge bg-primary">$9.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1557&q=80" class="card-img-top" alt="Cheesecake">
+                                <div class="card-body">
+                                    <h5 class="card-title">New York Cheesecake</h5>
+                                    <p class="card-text">Classic cheesecake with berry compote and whipped cream.</p>
+                                    <span class="badge bg-primary">$8.50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80" class="card-img-top" alt="Tiramisu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tiramisu</h5>
+                                    <p class="card-text">Traditional Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                                    <span class="badge bg-primary">$10.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers with Tooltips -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Weekly Specials</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Happy Hour 
+                                <span class="badge bg-success ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Available Monday-Friday, 4-6pm">i</span>
+                            </h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">50% off selected cocktails</li>
+                                <li class="list-group-item">$5 draft beers</li>
+                                <li class="list-group-item">Complimentary appetizer with drink purchase</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Weekend Brunch 
+                                <span class="badge bg-success ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Saturdays & Sundays, 10am-2pm">i</span>
+                            </h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Bottomless mimosas - $15</li>
+                                <li class="list-group-item">Kids eat free (12 and under)</li>
+                                <li class="list-group-item">Live jazz music</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Visit Us</h5>
+                            <address>
+                                <strong>Savory Bites</strong><br>
+                                123 Gourmet Avenue<br>
+                                Foodie City, FC 12345<br>
+                                <i class="fas fa-phone"></i> (555) 123-4567<br>
+                                <i class="fas fa-envelope"></i> info@savorybites.com
+                            </address>
+                            <h5 class="mt-4">Hours</h5>
+                            <ul class="list-unstyled">
+                                <li>Monday - Thursday: 11am - 10pm</li>
+                                <li>Friday - Saturday: 11am - 11pm</li>
+                                <li>Sunday: 10am - 9pm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Send Us a Message</h5>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reservationModalLabel">Make a Reservation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="reservationName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="reservationName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reservationEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="reservationEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reservationPhone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="reservationPhone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reservationDate" class="form-label">Date</label>
+                            <input type="date" class="form-control" id="reservationDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reservationTime" class="form-label">Time</label>
+                            <select class="form-select" id="reservationTime" required>
+                                <option value="">Select a time</option>
+                                <option>11:00 AM</option>
+                                <option>11:30 AM</option>
+                                <option>12:00 PM</option>
+                                <option>12:30 PM</option>
+                                <option>1:00 PM</option>
+                                <option>5:00 PM</option>
+                                <option>5:30 PM</option>
+                                <option>6:00 PM</option>
+                                <option>6:30 PM</option>
+                                <option>7:00 PM</option>
+                                <option>7:30 PM</option>
+                                <option>8:00 PM</option>
+                                <option>8:30 PM</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reservationGuests" class="form-label">Number of Guests</label>
+                            <select class="form-select" id="reservationGuests" required>
+                                <option value="">Select number</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8+</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="reservationNotes" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="reservationNotes" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Book Table</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Savory Bites</h5>
+                    <p>Experience culinary excellence in a warm and inviting atmosphere.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Menu</a></li>
+                        <li><a href="#" class="text-white">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to receive updates on special events and promotions.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
