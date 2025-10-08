@@ -1,5 +1,6 @@
 # 🍽️ Savory Bites | Modern Dining Experience
 
+
 Savory Bites is a **restaurant website template** built with **HTML5, CSS3, Bootstrap 5, and Font Awesome**.  
 It provides an elegant and modern dining experience design, including a hero carousel, about section, menu tabs, weekly specials, contact form, and reservation modal.
 
